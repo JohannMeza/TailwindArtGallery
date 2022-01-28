@@ -24,7 +24,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        'gradient-text-header': 'linear-gradient(90deg,#fff 24.5%, #151515 10%)'
+        'gradient-text-header': 'linear-gradient(90deg,#fff 42.9%, #151515 10%)'
       })
     },
   },
