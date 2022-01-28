@@ -6,9 +6,13 @@
 @tailwind utilities;
 
 .title {
-  @apply font-black text-5xl font-oswald my-3;
+  @apply font-black text-6xl sm:text-7xl font-oswald my-3;
 }
 
 .paragraph {
   @apply font-ruluko text-lg mt-2 mb-4;
+}
+
+.icon-anima {
+  @apply hover:scale-125 transition duration-200;
 }

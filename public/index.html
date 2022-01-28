@@ -10,8 +10,8 @@
 </head>
 <body>
   <!-- HEADER -->
-  <header class="xsm:h-auto md:h-[75vh] relative">
-    <div class="grid w-full h-full grid-cols-1 xsm:grid-rows-2 md:grid-rows-1 md:grid-cols-3 md:absolute xsm:relative -z-10">
+  <header class="xsm:h-auto md:min-h-[100vh] relative">
+    <div class="grid w-full md:min-h-[100vh] grid-cols-1 xsm:grid-rows-2 md:grid-rows-1 md:grid-cols-3 ">
       <div class="md:bg-primary row-span-2"></div>
       <div class="row-span-full md:col-start-2">
         <img src="./image/header-slider.jpg" class="object-cover min-w-full xsm:h-[250px] md:h-full" alt="Gallery Modern">
@@ -19,58 +19,61 @@
       <div class="hidden xsm:hidden"></div>
     </div>
 
-    <div class="container md:flex flex-row px-3 mt-3">
-      <h1 class="md:bg-gradient-text-header xsm:text-primary md:text-none bg-clip-text title">MODERN <br> ART GALLERY</h1>
+    <div class="container md:flex md:w-[70%] justify-between flex-row px-3 md:pt-28 h-full xsm:relative md:absolute inset-x-0 top-0">
+      <h1 class="md:bg-gradient-text-header xsm:text-primary md:text-none bg-clip-text title w-3/4">MODERN <br> ART GALLERY</h1>
 
-      <div>
+      <div class="md:w-2/4">
         <p class="paragraph">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
         
-        <div class="mt-8 mb-12 inline-block cursor-pointer">
+        <a href="./location.html" class="mt-8 mb-12 inline-block">
           <span class="font-oswald py-3 bg-primary text-third float-left px-4">OUR LOCATION</span>
           <span class="bg-secundary inline-block p-3 float-left text-third">
             <i class="fas fa-chevron-right"></i>
           </span>
-        </div>
+        </a>
       </div>
     </div>
   </header>
 
-  <div class="px-3 clear-both">
-    <main>
-      <div>
-        <img src="./image/image-1.jpg" alt="">
+  <div class="px-3 clear-both md:w-[70%] mx-auto mt-7">
+    <main class="md:flex md:flex-row-reverse gap-16">
+      <div class="md:w-2/3">
+        <img src="./image/image-1.jpg" class="w-full h-full" alt="">
       </div>
-      <div>
+      <div class="md:w-1/3">
         <h2 class="title text-primary">YOUR FAY AT THE GALLERY</h2>
         <p class="paragraph">Wander through our distinct collections and find new insights about our artist. Dive info the details of their creative process.</p>
       </div>
     </main>
   
-    <section class="grid grid-cols-1 gap-7">
-      <div><img src="./image/image-2.jpg" alt=""></div>
-
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-7 mt-7">
       <div>
-        <img src="./image/image-3.jpg" alt="">
+        <img src="./image/image-2.jpg" class="h-full" alt="">
       </div>
-      
-      <div class="p-9 bg-primary">
-        <div>
-          <h2 class="title text-third">COME & BE <br> INSPIRED</h2>
-          <p class="paragraph text-third">We're excited to welcome you to our gallery and see how our collection influence you</p>
+
+      <div class="grid gap-7">
+        <img src="./image/image-3.jpg" alt="">
+
+        <div class="p-9 bg-primary">
+          <div>
+            <h2 class="title text-third">COME & BE <br> INSPIRED</h2>
+            <p class="paragraph text-third">We're excited to welcome you to our gallery and see how our collection influence you</p>
+          </div>
         </div>
       </div>
+      
     </section>
   </div>
 
-  <footer class="bg-primary mt-20 px-3">
-    <div class="container px-9 py-6">
-      <h3 class="font-black text-3xl font-oswald text-third my-6">MODERN <br> ART GALLERY</h3>
-      <p class="paragraph my-4 text-third">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+  <footer class="bg-primary md:h-64 mt-20 px-3 flex items-center">
+    <div class="container px-9 py-6 md:grid grid-cols-4">
+      <h3 class="font-black text-4xl font-oswald text-third xsm:my-6 md:my-0 leading-[1.9rem]">MODERN <br> ART GALLERY</h3>
+      <p class="paragraph xsm:my-4 md:my-0 md:w-2/3 text-third col-span-2">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
   
       <div class="text-third flex gap-3 text-2xl cursor-pointer">
-        <i class="fab fa-facebook-square hover:scale-125"></i>
-        <i class="fab fa-instagram-square hover:scale-150"></i>
-        <i class="fab fa-twitter-square hover:scale-150"></i>
+        <i class="fab fa-facebook-square icon-anima"></i>
+        <i class="fab fa-instagram-square icon-anima"></i>
+        <i class="fab fa-twitter-square icon-anima"></i>
       </div>
     </div>
   </footer>
