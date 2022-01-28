@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="xsm:h-auto md:h-[75vh] relative">
+    <div class="grid w-full h-full grid-cols-1 xsm:grid-rows-2 md:grid-rows-1 md:grid-cols-3 md:absolute xsm:relative -z-10">
+      <div class="md:bg-primary row-span-2"></div>
+      <div class="row-span-full md:col-start-2">
+        <img src="./image/header-slider.jpg" class="object-cover min-w-full xsm:h-[250px] md:h-full" alt="Gallery Modern">
+      </div>
+      <div class="hidden xsm:hidden"></div>
+    </div>
+
+    <div class="container md:flex flex-row px-3 mt-3">
+      <h1 class="md:bg-gradient-text-header xsm:text-primary md:text-none bg-clip-text title">MODERN <br> ART GALLERY</h1>
+
+      <div>
+        <p class="paragraph">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
+        
+        <div class="mt-8 mb-12 inline-block cursor-pointer">
+          <span class="font-oswald py-3 bg-primary text-third float-left px-4">OUR LOCATION</span>
+          <span class="bg-secundary inline-block p-3 float-left text-third">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="px-3 clear-both">
+    <main>
+      <div>
+        <img src="./image/image-1.jpg" alt="">
+      </div>
+      <div>
+        <h2 class="title text-primary">YOUR FAY AT THE GALLERY</h2>
+        <p class="paragraph">Wander through our distinct collections and find new insights about our artist. Dive info the details of their creative process.</p>
+      </div>
+    </main>
+  
+    <section class="grid grid-cols-1 gap-7">
+      <div><img src="./image/image-2.jpg" alt=""></div>
+
+      <div>
+        <img src="./image/image-3.jpg" alt="">
+      </div>
+      
+      <div class="p-9 bg-primary">
+        <div>
+          <h2 class="title text-third">COME & BE <br> INSPIRED</h2>
+          <p class="paragraph text-third">We're excited to welcome you to our gallery and see how our collection influence you</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="bg-primary mt-20 px-3">
+    <div class="container px-9 py-6">
+      <h3 class="font-black text-3xl font-oswald text-third my-6">MODERN <br> ART GALLERY</h3>
+      <p class="paragraph my-4 text-third">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+  
+      <div class="text-third flex gap-3 text-2xl cursor-pointer">
+        <i class="fab fa-facebook-square hover:scale-125"></i>
+        <i class="fab fa-instagram-square hover:scale-150"></i>
+        <i class="fab fa-twitter-square hover:scale-150"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
